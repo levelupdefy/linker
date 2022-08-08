@@ -205,11 +205,6 @@ const links = [
         "https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home",
         "https://addons.mozilla.org/en-US/firefox/",
         "https://addons.opera.com/en/extensions/",
-
-
-
-
-
     ],
     [
         "0",
@@ -229,7 +224,7 @@ const ids = links[2];
 const pos = 8;
 
 for (let k = 0; k < uw.length; k++) {
-    const li = document.createElement("li");
+    const li = document.createElement("h3");
     const a = document.createElement("a");
     a.href = url[k];
     a.innerHTML = uw[k];
@@ -245,7 +240,7 @@ const input = document.getElementById("search");
 const fu = () => {
     const filter = input.value.toUpperCase();
     const ul = document.getElementById("links");
-    const li = ul.getElementsByTagName("li");
+    const li = ul.getElementsByTagName("h3");
     for (i = 0; i < li.length; i++) {
         const a = li[i].getElementsByTagName("a")[0];
         const txtValue = a.innerHTML;
@@ -258,7 +253,7 @@ const fu = () => {
     }
 }
 document.getElementById("search").addEventListener(
-    "keyup", ()=>{
+    "keyup", () => {
         document.getElementById("hide_div").classList.remove("hide");
         fu();
     }
