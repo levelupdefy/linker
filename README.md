@@ -11,3 +11,5 @@ version: 1.0.0
 
 status: developement
 ```
+
+get this extension on [firefox](https://addons.mozilla.org/en-US/firefox/addon/linker/)
